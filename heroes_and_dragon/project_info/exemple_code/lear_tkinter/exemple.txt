@@ -1,0 +1,17 @@
+обновить текст в лейбле которрый был введен
+через енрту через кнопку
+
+name_entry = ttk.Entry(master)
+name_entry.pack()
+
+name_label = ttk.Label(master, text='<example_text>',...)
+name_label.pack()
+
+name_button = ttk.Button(master,
+                        text='<example_text>',
+                        command=name_functions)
+name_button.pack()
+
+def name_function():
+    entered_text = entry.get()
+    label.config(text=entered_text)
